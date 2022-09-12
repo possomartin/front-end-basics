@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+.vertical
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal
+{
+    display: flex;
+    flex-direction: row;
+}
+
+body
+{
+    color: var(--color-white);
+    font-family: 'Popins', Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 40px 20px;
+
+    align-items: center;
+
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.label-input
+{
+    justify-content: space-evenly;
+}
+
+.modal-box
+{
+    justify-content: center;
+    align-items: center;
+
+    max-width: 500px;
+
+    background: #426391;
+    color: #E2E8E8;
+
+    padding: 20px 40px;
+
+    border-radius: 8px;
+
+    background: var(--color-darkblue-alpha);
+
+}
+
+.disability-group
+{
+    margin: 5px 0px;
+}
+
+.radio-group
+{
+    justify-content: space-around;
+}
+
+.label-input input, textarea
+{
+    border-radius: 8px;
+
+    margin: 10px 0px;
+    padding: 5px 10px;
+}
+
+#survey-form div
+{
+    margin: 10px 0px;
+}
+
+#submit
+{
+    cursor: pointer;
+    align-self: center;
+
+    font-size: 1em;
+
+    background: #37af65;
+    color: #426391;
+
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+
+    transition: transform ease 2s;
+}
+
+#submit:hover
+{
+    transform: scale(0.9);
+    color: #E2E8E8;
+    box-shadow: 0px 1px 6px 0px white;
+}

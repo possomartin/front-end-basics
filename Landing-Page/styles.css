@@ -1,0 +1,206 @@
+.vertical
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.horizontal
+{
+    display: flex;
+    flex-direction: row;
+}
+
+body
+{
+    margin: 0px;
+    padding: 0px;
+
+    background: #eee;
+}
+
+.page
+{
+    align-items: center;
+}
+
+#header
+{
+    z-index: 1;
+    position: fixed;
+    justify-content: space-around;
+    align-items: center;
+
+    width: auto;
+}
+
+.img
+{
+    width: 60vw;
+}
+
+.nav-link
+{
+    color: gray;
+
+    text-decoration: none;
+
+    margin: 0px 20px;
+}
+
+.nav-link:hover
+{
+    color: lightcoral;
+}
+
+main
+{
+    margin-top: 130px;
+}
+
+.survey-form
+{
+    align-items: center;
+}
+
+#form
+{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.survey-form input
+{
+    width: 30vw;
+    margin: 10px 0px;
+    border-radius: 8px;
+
+    padding: 5px;
+}
+
+#submit
+{
+    cursor: pointer;
+
+    padding: 5px 8px;
+    font-size: 1em;
+    background: cornflowerblue;
+    color: #eee;
+
+    border-radius: 6px;
+    max-width: 200px;
+
+    transition: transform ease 2s;
+}
+
+#submit:hover
+{
+    transform: scale(0.9);
+    box-shadow: 1px 0px 3px 0px lightslategray;
+}
+
+.description
+{
+    margin: 10% 0px;
+    justify-content: center;
+}
+
+.item-container
+{
+    max-width: 800px;
+    padding: 20px 10px;
+}
+
+.information p
+{
+    color: dimgray;
+}
+
+.icon
+{
+    justify-content: center;
+    align-items: center;
+
+    font-size: 2em;
+
+    width: 30vw;
+}
+
+.embeded-video
+{
+    align-items: center;
+}
+
+.menu
+{
+    display: flexbox;
+    list-style: none;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+.item
+{
+    margin: 0px 10px;
+}
+
+.item a
+{
+    color: hotpink;
+    text-decoration: none;
+}
+
+footer
+{
+    font-size: 0.9em;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 10px;
+    background: lightgray;
+
+    width: 45vw;
+
+    align-items: center;
+}
+
+footer p
+{
+    font-size: 0.8em;
+}
+
+@media only screen and (max-width: 1400px) 
+{
+    #header
+    {
+        position: relative;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img
+    {
+        width: auto;
+    }
+
+    main
+    {
+        margin-top: 10px;
+    }
+
+    footer
+    {
+        width: 100vw;
+    }
+
+    #video
+    {
+        width: 75vw;
+    }
+
+    .page
+    {
+        padding: 10px 40px 0px 40px;
+    }
+}
+

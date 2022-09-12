@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="vertical">
+    <h1 id="title">Survey Form</h1>
+    <p id="description"> Thank you for taking the time to help us improve the platform </p>    
+    <div class="modal-box vertical">
+        <form action="POST" id="survey-form" class="vertical">
+            <div class="label-input vertical">
+                <label for="name" id="name-label">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter name">
+            </div>
+            <div class="label-input vertical">
+                <label for="email" id="email-label">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter email" required>                
+            </div>        
+            <div class="label-input vertical">
+                <label for="number" id="number-label">Number:</label>
+                <input type="number" name="number" id="number" min="10" max="300" placeholder="Enter phone number">                
+            </div>
+            <div class="label-input vertical">
+                <label for="dropdown" id="dropdown-label">Gender:</label>
+                <select name="dropdown" id="dropdown">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>            
+            </div>
+            <div class="label-input vertical disability-group">
+                <label for="radio-group" id="radio-label">Disability:</label>
+                <div class="radio-group horizontal">
+                    <div class="label-input horizontal">
+                        <input type="radio" name="disability" id="disability" value="YES">    
+                        <label for="radio">Yes</label>
+                    </div>
+                    <div class="label-input horizontal">
+                        <input type="radio" name="disability" id="disability" value="NO">    
+                        <label for="radio">No</label>
+                    </div>
+                </div>                
+            </div>        
+            <div class="sports vertical">
+                <label for="label-input">What Sports do you play?</label>
+                <div class="label-input horizontal">
+                    <label for="basketball">Basketball:</label>
+                    <input type="checkbox" name="sports" id="checkbox" value="basketball">    
+                </div>
+                <div class="label-input horizontal">
+                    <label for="soccer">Soccer:</label>
+                    <input type="checkbox" name="sports" id="checkbox" value="soccer">                    
+                </div>
+            </div>
+            <div class="label-input vertical">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="Enter a short description about yourself"></textarea>            
+            </div>
+            <button id="submit" type="submit">Submit Survey</button>
+        </form>    
+    </div>
+</body>
+</html>
